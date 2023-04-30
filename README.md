@@ -1,2 +1,2 @@
-# sth-core
-SmartHoldem Core
+# SmartHoldem Core 2.0
+
