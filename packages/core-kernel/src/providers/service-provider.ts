@@ -115,7 +115,7 @@ export abstract class ServiceProvider {
      */
     public alias(): string | undefined {
         if (this.packageManifest) {
-            return this.packageManifest.get("arkecosystem.core.alias");
+            return this.packageManifest.get("smartholdem.core.alias");
         }
 
         return undefined;
