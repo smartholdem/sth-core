@@ -1,4 +1,4 @@
-import { Contracts, Container } from "@smartholdem/core-kernel";
+import { Container, Contracts } from "@smartholdem/core-kernel";
 import { Connection } from "typeorm";
 
 @Container.injectable()
