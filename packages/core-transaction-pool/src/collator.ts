@@ -1,5 +1,6 @@
 import { Container, Contracts } from "@smartholdem/core-kernel";
 import { Interfaces, Managers } from "@smartholdem/crypto";
+
 import { TransactionHasExpiredError } from "./errors";
 
 @Container.injectable()
