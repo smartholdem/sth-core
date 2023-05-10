@@ -1,6 +1,6 @@
-import { Container, Contracts, Providers, Types, Utils } from "@smartholdem/core-kernel";
 import { badData } from "@hapi/boom";
 import { Server as HapiServer, ServerInjectOptions, ServerInjectResponse, ServerRoute } from "@hapi/hapi";
+import { Container, Contracts, Providers, Types, Utils } from "@smartholdem/core-kernel";
 import { readFileSync } from "fs";
 
 import * as Schemas from "./schemas";
