@@ -1,7 +1,7 @@
-import { Container, Contracts } from "@smartholdem/core-kernel";
-import { Enums } from "@smartholdem/crypto";
 import { Boom, notFound } from "@hapi/boom";
 import Hapi from "@hapi/hapi";
+import { Container, Contracts } from "@smartholdem/core-kernel";
+import { Enums } from "@smartholdem/crypto";
 
 import { Identifiers } from "../identifiers";
 import { TransactionResource } from "../resources";
