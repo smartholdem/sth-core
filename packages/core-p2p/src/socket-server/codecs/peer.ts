@@ -1,5 +1,6 @@
 import { Contracts } from "@smartholdem/core-kernel";
 import { Utils } from "@smartholdem/crypto";
+
 import { peer } from "./proto/protos";
 
 export const getPeers = {
