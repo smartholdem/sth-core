@@ -1,4 +1,5 @@
 import { Contracts, Services, Types } from "@smartholdem/core-kernel";
+
 import { ForgerService } from "../forger-service";
 import { Delegate } from "../interfaces";
 
