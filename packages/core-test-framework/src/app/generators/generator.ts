@@ -1,3 +1,4 @@
+// @ts-ignore
 import { Identities, Interfaces } from "@smartholdem/crypto";
 import { generateMnemonic } from "bip39";
 
