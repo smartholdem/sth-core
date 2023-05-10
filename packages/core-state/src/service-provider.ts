@@ -113,7 +113,7 @@ export class ServiceProvider extends Providers.ServiceProvider {
     }
 
     public async bootWhen(serviceProvider?: string): Promise<boolean> {
-        return serviceProvider === "@arkecosystem/core-database";
+        return serviceProvider === "@smartholdem/core-database";
     }
 
     public configSchema(): object {
