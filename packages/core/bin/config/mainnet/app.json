@@ -1,0 +1,108 @@
+{
+    "core": {
+        "plugins": [
+            {
+                "package": "@smartholdem/core-logger-pino"
+            },
+            {
+                "package": "@smartholdem/core-state"
+            },
+            {
+                "package": "@smartholdem/core-database"
+            },
+            {
+                "package": "@smartholdem/core-transactions"
+            },
+            {
+                "package": "@smartholdem/core-magistrate-transactions"
+            },
+            {
+                "package": "@smartholdem/core-transaction-pool"
+            },
+            {
+                "package": "@smartholdem/core-p2p"
+            },
+            {
+                "package": "@smartholdem/core-blockchain"
+            },
+            {
+                "package": "@smartholdem/core-api"
+            },
+            {
+                "package": "@smartholdem/core-magistrate-api"
+            },
+            {
+                "package": "@smartholdem/core-webhooks"
+            },
+            {
+                "package": "@smartholdem/core-forger"
+            }
+        ]
+    },
+    "relay": {
+        "plugins": [
+            {
+                "package": "@smartholdem/core-logger-pino"
+            },
+            {
+                "package": "@smartholdem/core-state"
+            },
+            {
+                "package": "@smartholdem/core-database"
+            },
+            {
+                "package": "@smartholdem/core-transactions"
+            },
+            {
+                "package": "@smartholdem/core-magistrate-transactions"
+            },
+            {
+                "package": "@smartholdem/core-transaction-pool"
+            },
+            {
+                "package": "@smartholdem/core-p2p"
+            },
+            {
+                "package": "@smartholdem/core-blockchain"
+            },
+            {
+                "package": "@smartholdem/core-api"
+            },
+            {
+                "package": "@smartholdem/core-magistrate-api"
+            },
+            {
+                "package": "@smartholdem/core-webhooks"
+            }
+        ]
+    },
+    "forger": {
+        "plugins": [
+            {
+                "package": "@smartholdem/core-logger-pino"
+            },
+            {
+                "package": "@smartholdem/core-transactions"
+            },
+            {
+                "package": "@smartholdem/core-magistrate-transactions"
+            },
+            {
+                "package": "@smartholdem/core-forger"
+            }
+        ]
+    },
+    "snapshot": {
+        "plugins": [
+            {
+                "package": "@smartholdem/core-logger-pino"
+            },
+            {
+                "package": "@smartholdem/core-database"
+            },
+            {
+                "package": "@smartholdem/core-snapshots"
+            }
+        ]
+    }
+}
