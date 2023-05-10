@@ -1,8 +1,8 @@
+import Hapi from "@hapi/hapi";
 import { Repositories } from "@smartholdem/core-database";
 import { Container, Contracts, Providers, Services } from "@smartholdem/core-kernel";
 import { Handlers } from "@smartholdem/core-transactions";
 import { Crypto, Managers } from "@smartholdem/crypto";
-import Hapi from "@hapi/hapi";
 
 import { PortsResource } from "../resources";
 import { Controller } from "./controller";
