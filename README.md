@@ -1,2 +1,2 @@
-# sth-core
-SmartHoldem Core Blockchain
+# SmartHoldem Core Blockchain
+
