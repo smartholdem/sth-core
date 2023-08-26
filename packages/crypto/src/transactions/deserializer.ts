@@ -9,7 +9,7 @@ import { IDeserializeOptions, ITransaction, ITransactionData } from "../interfac
 import { BigNumber, ByteBuffer, isSupportedTransactionVersion } from "../utils";
 import { TransactionTypeFactory } from "./types";
 
-// Reference: https://github.com/smartholdem/AIPs/blob/master/AIPS/aip-11.md
+// Reference: https://github.com/smartholdem/SHIPS/blob/master/SHIPS/ship-11.md
 export class Deserializer {
     public static applyV1Compatibility(transaction: ITransactionData): void {
         transaction.secondSignature = transaction.secondSignature || transaction.signSignature;
