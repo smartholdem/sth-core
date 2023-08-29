@@ -1,0 +1,46 @@
+{
+    "name": "@smartholdem/core-transaction-pool",
+    "version": "3.8.0",
+    "description": "Transaction Pool Manager for SmartHoldem Core",
+    "license": "MIT",
+    "contributors": [
+        "TechnoL0g <technolog@smartholdem.io>"
+    ],
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index",
+    "types": "dist/index",
+    "scripts": {
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "build:docs": "../../node_modules/typedoc/bin/typedoc --out docs src",
+        "clean": "rimraf dist",
+        "compile": "node ../../node_modules/typescript/bin/tsc",
+        "prepublishOnly": "yarn build",
+        "pretest": "bash ../../scripts/pre-test.sh"
+    },
+    "dependencies": {
+        "@smartholdem/core-kernel": "3.8.0",
+        "@smartholdem/core-transactions": "3.8.0",
+        "@smartholdem/crypto": "3.8.0",
+        "better-sqlite3": "7.4.3",
+        "fs-extra": "8.1.0",
+        "joi": "17.4.2"
+    },
+    "devDependencies": {
+        "@types/better-sqlite3": "5.4.3",
+        "@types/fs-extra": "8.1.2"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "smartholdem": {
+        "core": {
+            "alias": "transactionPool"
+        }
+    }
+}
