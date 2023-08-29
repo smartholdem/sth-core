@@ -1,4 +1,5 @@
 import { Crypto, Managers } from "@smartholdem/crypto";
+
 import { ForgingInfo } from "../contracts/shared";
 
 export interface MilestoneSearchResult {
