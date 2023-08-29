@@ -1,0 +1,44 @@
+{
+    "name": "@smartholdem/core-logger-pino",
+    "version": "3.8.0",
+    "description": "Webhooks for SmartHoldem Core",
+    "license": "MIT",
+    "contributors": [
+        "TechnoL0g <technolog@smartholdem.io>"
+    ],
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index",
+    "scripts": {
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "build:docs": "../../node_modules/typedoc/bin/typedoc --out docs src",
+        "clean": "rimraf dist",
+        "compile": "node ../../node_modules/typescript/bin/tsc",
+        "prepublishOnly": "yarn build",
+        "pretest": "bash ../../scripts/pre-test.sh"
+    },
+    "dependencies": {
+        "@smartholdem/core-kernel": "3.8.0",
+        "chalk": "4.1.2",
+        "joi": "17.4.2",
+        "pino": "8.7.0",
+        "pino-pretty": "9.1.1",
+        "pump": "3.0.0",
+        "pumpify": "2.0.1",
+        "rotating-file-stream": "3.0.4",
+        "split2": "4.1.0"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@types/pump": "1.1.1",
+        "@types/pumpify": "1.4.1",
+        "@types/split2": "3.2.1"
+    }
+}
