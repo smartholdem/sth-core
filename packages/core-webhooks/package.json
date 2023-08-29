@@ -1,6 +1,6 @@
 {
     "name": "@smartholdem/core-webhooks",
-    "version": "3.8.0",
+    "version": "3.8.1",
     "description": "Webhooks for SmartHoldem Core",
     "license": "MIT",
     "contributors": [
@@ -20,8 +20,8 @@
         "pretest": "bash ../../scripts/pre-test.sh"
     },
     "dependencies": {
-        "@smartholdem/core-kernel": "3.8.0",
-        "@smartholdem/crypto": "3.8.0",
+        "@smartholdem/core-kernel": "3.8.1",
+        "@smartholdem/crypto": "3.8.1",
         "@hapi/boom": "9.0.0",
         "@hapi/hapi": "20.1.5",
         "fs-extra": "8.1.0",
