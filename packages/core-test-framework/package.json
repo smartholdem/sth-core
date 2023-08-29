@@ -1,0 +1,55 @@
+{
+    "name": "@smartholdem/core-test-framework",
+    "version": "3.8.1",
+    "description": "Test Framework for SmartHoldem Core",
+    "license": "MIT",
+    "contributors": [
+        "TechnoL0g <technolog@smartholdem.io>"
+    ],
+    "files": [
+        "dist"
+    ],
+    "main": "dist/index",
+    "scripts": {
+        "build": "yarn clean && yarn compile",
+        "build:watch": "yarn clean && yarn compile -w",
+        "build:docs": "../../node_modules/typedoc/bin/typedoc --out docs src",
+        "clean": "rimraf dist",
+        "compile": "node ../../node_modules/typescript/bin/tsc",
+        "prepublishOnly": "yarn build"
+    },
+    "dependencies": {
+        "@smartholdem/core": "3.8.1",
+        "@smartholdem/core-api": "3.8.1",
+        "@smartholdem/core-blockchain": "3.8.1",
+        "@smartholdem/core-cli": "3.8.1",
+        "@smartholdem/core-database": "3.8.1",
+        "@smartholdem/core-forger": "3.8.1",
+        "@smartholdem/core-kernel": "3.8.1",
+        "@smartholdem/core-magistrate-crypto": "3.8.1",
+        "@smartholdem/core-p2p": "3.8.1",
+        "@smartholdem/core-state": "3.8.1",
+        "@smartholdem/crypto": "3.8.1",
+        "bip39": "3.0.4",
+        "bs58": "4.0.1",
+        "bytebuffer": "5.0.1",
+        "chance": "1.1.8",
+        "env-paths": "2.2.0",
+        "fast-memoize": "2.5.2",
+        "fs-extra": "8.1.0",
+        "got": "11.8.5",
+        "jest-extended": "0.11.5",
+        "lodash.clonedeep": "4.5.0",
+        "tmp": "0.2.1",
+        "xstate": "4.23.4"
+    },
+    "devDependencies": {
+        "@types/got": "9.6.12"
+    },
+    "engines": {
+        "node": ">=10.x"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}
