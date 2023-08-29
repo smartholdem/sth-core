@@ -31,6 +31,26 @@
         {
             "ip": "5.63.154.41",
             "port": 4001
+        },
+        {
+            "ip": "194.67.90.235",
+            "port": 4001
+        },
+        {
+            "ip": "89.108.83.164",
+            "port": 4001
+        },
+        {
+            "ip": "80.78.248.39",
+            "port": 4001
+        },
+        {
+            "ip": "194.58.103.175",
+            "port": 4001
+        },
+        {
+            "ip": "194.67.116.168",
+            "port": 4001
         }
     ],
     "sources": ["https://raw.githubusercontent.com/smartholdem/peers/master/mainnet.json"]
