@@ -1,6 +1,6 @@
 {
     "name": "@smartholdem/core-state",
-    "version": "3.8.0",
+    "version": "3.8.1",
     "description": "State Management for SmartHoldem Core",
     "license": "MIT",
     "contributors": [
@@ -21,10 +21,10 @@
         "pretest": "bash ../../scripts/pre-test.sh"
     },
     "dependencies": {
-        "@smartholdem/core-database": "3.8.0",
-        "@smartholdem/core-kernel": "3.8.0",
-        "@smartholdem/core-transactions": "3.8.0",
-        "@smartholdem/crypto": "3.8.0",
+        "@smartholdem/core-database": "3.8.1",
+        "@smartholdem/core-kernel": "3.8.1",
+        "@smartholdem/core-transactions": "3.8.1",
+        "@smartholdem/crypto": "3.8.1",
         "immutable": "4.0.0-rc.14",
         "joi": "17.4.2"
     },
