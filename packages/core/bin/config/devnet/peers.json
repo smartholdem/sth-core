@@ -1,0 +1,9 @@
+{
+    "list": [
+        {
+            "ip": "127.0.0.1",
+            "port": 4002
+        }
+    ],
+    "sources": ["https://raw.githubusercontent.com/smartholdem/peers/master/devnet.json"]
+}
