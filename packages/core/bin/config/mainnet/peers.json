@@ -1,0 +1,13 @@
+{
+    "list": [
+        {
+            "ip": "194.67.108.81",
+            "port": 4001
+        },
+        {
+            "ip": "89.108.98.213",
+            "port": 4001
+        }
+    ],
+    "sources": ["https://raw.githubusercontent.com/smartholdem/peers/master/mainnet.json"]
+}
