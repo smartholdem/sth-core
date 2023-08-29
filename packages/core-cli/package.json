@@ -1,6 +1,6 @@
 {
     "name": "@smartholdem/core-cli",
-    "version": "3.8.0",
+    "version": "3.8.1",
     "description": "Core cli of the SmartHoldem Blockchain",
     "license": "MIT",
     "contributors": [
@@ -21,8 +21,8 @@
         "prepublishOnly": "yarn build"
     },
     "dependencies": {
-        "@smartholdem/core-kernel": "3.8.0",
-        "@smartholdem/crypto": "3.8.0",
+        "@smartholdem/core-kernel": "3.8.1",
+        "@smartholdem/crypto": "3.8.1",
         "@smartholdem/utils": "1.3.1",
         "boxen": "4.2.0",
         "cli-table3": "0.6.0",
