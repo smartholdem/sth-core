@@ -53,5 +53,5 @@
             "port": 4001
         }
     ],
-    "sources": ["https://raw.githubusercontent.com/smartholdem/peers/master/mainnet.json"]
+    "sources": ["https://raw.githubusercontent.com/smartholdem/data/main/mainnet/peers.json"]
 }
