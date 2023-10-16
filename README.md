@@ -10,19 +10,19 @@ sudo su - sth
 ```shell
 sudo apt-get update --fix-missing
 sudo apt-get install -y git curl apt-transport-https update-notifier
-sudo apt-get install build-essential libcairo2-dev pkg-config libtool autoconf automake python libpq-dev jq -y
+sudo apt-get install build-essential libcairo2-dev pkg-config libtool autoconf automake libpq-dev jq -y
 sudo apt-get -y install libjemalloc-dev
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh 2>/dev/null | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 nvm install 16.13.2
-npm install -g yarn pm2 npm forever grunt-cli
+npm install -g yarn pm2 forever grunt-cli
 
 sudo apt install python-is-python3
 ```
 ```shell
 sudo apt-get install postgresql postgresql-contrib -y
-sudo -i -u postgres psql -c "CREATE USER sth  WITH PASSWORD 'password' CREATEDB;"
+sudo -i -u postgres psql -c "CREATE USER sth WITH PASSWORD 'password' CREATEDB;"
 sudo -i -u postgres psql -c "CREATE DATABASE sth_mainnet WITH OWNER sth;"
 ```
 ## Download & install core
@@ -40,6 +40,8 @@ cd packages/core
 nano bin/config/mainnet/delegates.json and insert "passphrase 12 worlds"
 yarn sth config:publish --network=mainnet --reset
 yarn sth core:start --network=mainnet
+pm2 save
+pm2 startup
 pm2 log
 ```
 or pm2 list
@@ -52,6 +54,8 @@ or pm2 save
 cd packages/core
 yarn sth config:publish --network=mainnet --reset
 yarn sth relay:start --network=mainnet
+pm2 save
+pm2 startup
 pm2 log
 ```
 
