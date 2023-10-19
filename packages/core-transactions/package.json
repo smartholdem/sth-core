@@ -1,6 +1,6 @@
 {
     "name": "@smartholdem/core-transactions",
-    "version": "3.8.1",
+    "version": "3.8.2",
     "description": "Transaction Services for SmartHoldem Core",
     "license": "MIT",
     "contributors": [
@@ -20,9 +20,9 @@
         "prepublishOnly": "yarn build"
     },
     "dependencies": {
-        "@smartholdem/core-database": "3.8.1",
-        "@smartholdem/core-kernel": "3.8.1",
-        "@smartholdem/crypto": "3.8.1",
+        "@smartholdem/core-database": "3.8.2",
+        "@smartholdem/core-kernel": "3.8.2",
+        "@smartholdem/crypto": "3.8.2",
         "joi": "17.4.2"
     },
     "engines": {
