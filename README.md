@@ -66,3 +66,11 @@ cd packages/core
 yarn sth config:publish --network=testnet --reset
 yarn full:testnet
 ```
+
+## Upgrade
+```shell
+cd sth-core
+git pull
+yarn setup
+pm2 restart
+```
