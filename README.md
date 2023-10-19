@@ -72,5 +72,6 @@ yarn full:testnet
 cd sth-core
 git pull
 yarn setup
-pm2 restart
+pm2 restart 0
+pm2 log
 ```
