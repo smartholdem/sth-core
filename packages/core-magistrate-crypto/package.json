@@ -1,6 +1,6 @@
 {
     "name": "@smartholdem/core-magistrate-crypto",
-    "version": "3.8.1",
+    "version": "3.8.2",
     "description": "SmartHoldem transactions for businesses and sidechains",
     "license": "MIT",
     "contributors": [
@@ -19,7 +19,7 @@
         "prepublishOnly": "yarn build"
     },
     "dependencies": {
-        "@smartholdem/core-kernel": "3.8.1",
-        "@smartholdem/crypto": "3.8.1"
+        "@smartholdem/core-kernel": "3.8.2",
+        "@smartholdem/crypto": "3.8.2"
     }
 }
