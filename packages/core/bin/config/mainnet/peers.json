@@ -51,6 +51,10 @@
         {
             "ip": "194.67.116.168",
             "port": 4001
+        },
+        {
+            "ip": "159.69.188.60",
+            "port": 4001
         }
     ],
     "sources": ["https://raw.githubusercontent.com/smartholdem/data/main/mainnet/peers.json"]
