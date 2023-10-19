@@ -1,6 +1,6 @@
 {
     "name": "@smartholdem/core-database",
-    "version": "3.8.1",
+    "version": "3.8.2",
     "description": "Database Interface for SmartHoldem Core",
     "license": "MIT",
     "contributors": [
@@ -21,8 +21,8 @@
         "pretest": "bash ../../scripts/pre-test.sh"
     },
     "dependencies": {
-        "@smartholdem/core-kernel": "3.8.1",
-        "@smartholdem/crypto": "3.8.1",
+        "@smartholdem/core-kernel": "3.8.2",
+        "@smartholdem/crypto": "3.8.2",
         "@smartholdem/utils": "1.3.1",
         "dayjs": "1.10.7",
         "joi": "17.4.2",
