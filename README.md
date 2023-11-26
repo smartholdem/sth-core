@@ -41,7 +41,7 @@ nano bin/config/mainnet/delegates.json and insert "passphrase 12 worlds"
 yarn sth config:publish --network=mainnet --reset
 yarn sth core:start --network=mainnet
 pm2 save
-pm2 startup
+pm2 startup #(after To setup the Startup Script, copy/paste the following command:...)
 pm2 log
 ```
 or pm2 list
