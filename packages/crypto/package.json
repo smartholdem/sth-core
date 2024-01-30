@@ -1,6 +1,6 @@
 {
     "name": "@smartholdem/crypto",
-    "version": "3.8.2",
+    "version": "3.8.3",
     "description": "Crypto utilities for the SmartHoldem Blockchain",
     "license": "MIT",
     "contributors": [
