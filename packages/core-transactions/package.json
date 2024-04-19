@@ -22,7 +22,7 @@
     "dependencies": {
         "@smartholdem/core-database": "3.8.2",
         "@smartholdem/core-kernel": "3.8.2",
-        "@smartholdem/crypto": "3.8.2",
+        "@smartholdem/crypto": "3.8.3",
         "joi": "17.4.2"
     },
     "engines": {

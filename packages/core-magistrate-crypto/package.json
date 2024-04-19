@@ -20,6 +20,6 @@
     },
     "dependencies": {
         "@smartholdem/core-kernel": "3.8.2",
-        "@smartholdem/crypto": "3.8.2"
+        "@smartholdem/crypto": "3.8.3"
     }
 }

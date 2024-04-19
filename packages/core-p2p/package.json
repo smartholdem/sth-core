@@ -27,7 +27,7 @@
         "@smartholdem/core-database": "3.8.2",
         "@smartholdem/core-kernel": "3.8.2",
         "@smartholdem/core-state": "3.8.2",
-        "@smartholdem/crypto": "3.8.2",
+        "@smartholdem/crypto": "3.8.3",
         "@hapi/boom": "9.0.0",
         "@hapi/bounce": "2.0.0",
         "@hapi/hapi": "20.1.5",

@@ -25,7 +25,7 @@
         "@smartholdem/core-kernel": "3.8.2",
         "@smartholdem/core-state": "3.8.2",
         "@smartholdem/core-transactions": "3.8.2",
-        "@smartholdem/crypto": "3.8.2",
+        "@smartholdem/crypto": "3.8.3",
         "joi": "17.4.2",
         "xstate": "4.23.4"
     },

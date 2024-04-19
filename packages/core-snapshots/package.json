@@ -22,7 +22,7 @@
     "dependencies": {
         "@smartholdem/core-database": "3.8.2",
         "@smartholdem/core-kernel": "3.8.2",
-        "@smartholdem/crypto": "3.8.2",
+        "@smartholdem/crypto": "3.8.3",
         "bytebuffer": "5.0.1",
         "fs-extra": "8.1.0",
         "joi": "17.4.2",

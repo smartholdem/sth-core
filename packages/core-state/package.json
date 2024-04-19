@@ -24,7 +24,7 @@
         "@smartholdem/core-database": "3.8.2",
         "@smartholdem/core-kernel": "3.8.2",
         "@smartholdem/core-transactions": "3.8.2",
-        "@smartholdem/crypto": "3.8.2",
+        "@smartholdem/crypto": "3.8.3",
         "immutable": "4.0.0-rc.14",
         "joi": "17.4.2"
     },

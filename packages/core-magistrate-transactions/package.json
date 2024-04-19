@@ -22,7 +22,7 @@
         "@smartholdem/core-kernel": "3.8.2",
         "@smartholdem/core-magistrate-crypto": "3.8.2",
         "@smartholdem/core-transactions": "3.8.2",
-        "@smartholdem/crypto": "3.8.2"
+        "@smartholdem/crypto": "3.8.3"
     },
     "publishConfig": {
         "access": "public"
