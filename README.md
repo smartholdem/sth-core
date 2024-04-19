@@ -91,6 +91,7 @@ cd .local/share/sth-core/mainnet/snapshots
 Restore the database from a dump
 ```shell
 cd sth-core/packages/core
-yarn sth snapshot:restore
+yarn sth snapshot:restore --blocks 1-2520819
 ```
 
+--blocks # blocks to append to, correlates to folder name
