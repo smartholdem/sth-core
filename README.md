@@ -75,3 +75,22 @@ yarn setup
 pm2 restart 0
 pm2 log
 ```
+## Snaphots
+
+Create a dump of the database
+```shell
+cd sth-core/packages/core
+yarn sth snapshot:dump
+```
+stored in folder:
+```shell
+la
+cd .local/share/sth-core/mainnet/snapshots
+```
+
+Restore the database from a dump
+```shell
+cd sth-core/packages/core
+yarn sth snapshot:restore
+```
+
