@@ -34,7 +34,17 @@ yarn setup
 
 ## MainNet
 
-### Delegate forging
+### Relay Full Node
+```shell
+cd packages/core
+yarn sth config:publish --network=mainnet --reset
+yarn sth relay:start --network=mainnet
+pm2 save
+pm2 startup
+pm2 log
+```
+
+### Delegate Forging Node
 ```shell
 cd packages/core
 nano bin/config/mainnet/delegates.json and insert "passphrase 12 worlds"
@@ -48,16 +58,6 @@ or pm2 list
 or pm2 restart
 or pm2 stop all
 or pm2 save
-
-### Relay
-```shell
-cd packages/core
-yarn sth config:publish --network=mainnet --reset
-yarn sth relay:start --network=mainnet
-pm2 save
-pm2 startup
-pm2 log
-```
 
 ## Testnet
 
