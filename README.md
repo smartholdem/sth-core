@@ -88,7 +88,7 @@ la
 cd .local/share/sth-core/mainnet/snapshots
 ```
 
-Restore the blockchain from a snapshot
+## Restore the blockchain from a snapshot
 Get snapshot from https://snapshots.smartholdem.io/
 
 ```shell
@@ -99,6 +99,7 @@ tar -zxvf 1-5595786.tgz
 rm 1-5595786.tgz
 
 cd /home/sth/sth-core/packages/core
+yarn sth config:publish --network=mainnet --reset
 dropdb sth_mainnet
 sudo -i -u postgres psql -c "CREATE DATABASE sth_mainnet WITH OWNER sth;"
 yarn sth snapshot:restore --blocks 1-5595786
