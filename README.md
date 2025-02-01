@@ -50,6 +50,7 @@ dropdb sth_mainnet
 sudo -i -u postgres psql -c "CREATE DATABASE sth_mainnet WITH OWNER sth;"
 yarn sth snapshot:restore --blocks 1-5595786
 yarn sth relay:start --network=mainnet
+pm2 log
 ```
 --blocks # blocks to append to, correlates to folder name
 
