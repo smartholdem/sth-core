@@ -34,6 +34,25 @@ yarn setup
 
 ## MainNet
 
+## Blockchain sync from a snapshot
+Get snapshot from https://snapshots.smartholdem.io/
+
+```shell
+mkdir -p /home/sth/.local/share/sth-core/mainnet/snapshots
+cd /home/sth/.local/share/sth-core/mainnet/snapshots
+wget https://snapshots.smartholdem.io/1-5595786.tgz
+tar -zxvf 1-5595786.tgz
+rm 1-5595786.tgz
+
+cd /home/sth/sth-core/packages/core
+yarn sth config:publish --network=mainnet --reset
+dropdb sth_mainnet
+sudo -i -u postgres psql -c "CREATE DATABASE sth_mainnet WITH OWNER sth;"
+yarn sth snapshot:restore --blocks 1-5595786
+yarn sth relay:start --network=mainnet
+```
+--blocks # blocks to append to, correlates to folder name
+
 ### Relay Full Node
 ```shell
 cd packages/core
@@ -88,21 +107,3 @@ la
 cd .local/share/sth-core/mainnet/snapshots
 ```
 
-## Restore the blockchain from a snapshot
-Get snapshot from https://snapshots.smartholdem.io/
-
-```shell
-mkdir -p /home/sth/.local/share/sth-core/mainnet/snapshots
-cd /home/sth/.local/share/sth-core/mainnet/snapshots
-wget https://snapshots.smartholdem.io/1-5595786.tgz
-tar -zxvf 1-5595786.tgz
-rm 1-5595786.tgz
-
-cd /home/sth/sth-core/packages/core
-yarn sth config:publish --network=mainnet --reset
-dropdb sth_mainnet
-sudo -i -u postgres psql -c "CREATE DATABASE sth_mainnet WITH OWNER sth;"
-yarn sth snapshot:restore --blocks 1-5595786
-```
-
---blocks # blocks to append to, correlates to folder name
