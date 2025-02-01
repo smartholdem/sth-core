@@ -92,14 +92,12 @@ Restore the database from a dump
 Get snapshot from https://snapshots.smartholdem.io/
 
 ```shell
-mkdir /home/sth/.local/share/sth-core
-mkdir /home/sth/.local/share/sth-core/mainnet
-mkdir /home/sth/.local/share/sth-core/mainnet/snapshots
-
+mkdir -p /home/sth/.local/share/sth-core/mainnet/snapshots
 cd /home/sth/.local/share/sth-core/mainnet/snapshots
 wget https://snapshots.smartholdem.io/1-5595786.tgz
 tar -zxvf 1-5595786.tgz
 rm 1-5595786.tgz
+
 cd /home/sth/sth-core/packages/core
 dropdb sth_mainnet
 sudo -i -u postgres psql -c "CREATE DATABASE sth_mainnet WITH OWNER sth;"
