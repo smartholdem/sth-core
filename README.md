@@ -88,7 +88,7 @@ la
 cd .local/share/sth-core/mainnet/snapshots
 ```
 
-Restore the database from a dump
+Restore the blockchain from a snapshot
 Get snapshot from https://snapshots.smartholdem.io/
 
 ```shell
