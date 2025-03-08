@@ -40,15 +40,15 @@ Get snapshot from https://snapshots.smartholdem.io/
 ```shell
 mkdir -p /home/sth/.local/share/sth-core/mainnet/snapshots
 cd /home/sth/.local/share/sth-core/mainnet/snapshots
-wget https://snapshots.smartholdem.io/1-5595786.tgz
-tar -zxvf 1-5595786.tgz
-rm 1-5595786.tgz
+wget https://snapshots.smartholdem.io/1-5917695.tgz
+tar -zxvf 1-5917695.tgz
+rm 1-5917695.tgz
 
 cd /home/sth/sth-core/packages/core
 yarn sth config:publish --network=mainnet --reset
 dropdb sth_mainnet
 sudo -i -u postgres psql -c "CREATE DATABASE sth_mainnet WITH OWNER sth;"
-yarn sth snapshot:restore --blocks 1-5595786
+yarn sth snapshot:restore --blocks 1-5917695
 yarn sth relay:start --network=mainnet
 pm2 log
 ```
@@ -56,7 +56,7 @@ pm2 log
 
 ### Relay Full Node
 ```shell
-cd packages/core
+cd sth-core/packages/core
 yarn sth config:publish --network=mainnet --reset
 yarn sth relay:start --network=mainnet
 pm2 save
@@ -66,7 +66,7 @@ pm2 log
 
 ### Delegate Forging Node
 ```shell
-cd packages/core
+cd sth-core/packages/core
 nano bin/config/mainnet/delegates.json and insert "passphrase 12 worlds"
 yarn sth config:publish --network=mainnet --reset
 yarn sth core:start --network=mainnet
@@ -82,7 +82,7 @@ or pm2 save
 ## Testnet
 
 ```shell
-cd packages/core
+cd sth-core/packages/core
 yarn sth config:publish --network=testnet --reset
 yarn full:testnet
 ```
