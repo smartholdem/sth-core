@@ -2,6 +2,15 @@
 
 ![SmartHoldem BlockChain](https://raw.githubusercontent.com/smartholdem/sth-core/main/packages/core/banner.png)
 
+
+## Requirements
+
+- OS Ubuntu v20 - v24
+- nodejs v16 - v18
+
+
+## Installation
+
 ```shell
 sudo adduser sth
 sudo usermod -aG sudo sth
