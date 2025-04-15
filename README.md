@@ -49,9 +49,9 @@ Get snapshot from https://snapshots.smartholdem.io/
 ```shell
 mkdir -p /home/sth/.local/share/sth-core/mainnet/snapshots
 cd /home/sth/.local/share/sth-core/mainnet/snapshots
-wget https://snapshots.smartholdem.io/1-5917695.tgz
-tar -zxvf 1-5917695.tgz
-rm 1-5917695.tgz
+wget https://snapshots.smartholdem.io/1-6322323.tgz
+tar -zxvf 1-6322323.tgz
+rm 1-6322323.tgz
 
 cd /home/sth/sth-core/packages/core
 yarn sth config:publish --network=mainnet --reset
