@@ -49,15 +49,15 @@ Get snapshot from https://snapshots.smartholdem.io/
 ```shell
 mkdir -p /home/sth/.local/share/sth-core/mainnet/snapshots
 cd /home/sth/.local/share/sth-core/mainnet/snapshots
-wget https://snapshots.smartholdem.io/1-6322323.tgz
-tar -zxvf 1-6322323.tgz
-rm 1-6322323.tgz
+wget https://snapshots.smartholdem.io/1-6833820.tgz
+tar -zxvf 1-6833820.tgz
+rm 1-6833820.tgz
 
 cd /home/sth/sth-core/packages/core
 yarn sth config:publish --network=mainnet --reset
 dropdb sth_mainnet
 sudo -i -u postgres psql -c "CREATE DATABASE sth_mainnet WITH OWNER sth;"
-yarn sth snapshot:restore --blocks 1-5917695
+yarn sth snapshot:restore --blocks 1-6833820
 yarn sth relay:start --network=mainnet
 pm2 log
 ```
