@@ -46,7 +46,7 @@ yarn setup
 ## MainNet
 
 ## Blockchain sync from a snapshot
-Get snapshot from https://snapshots.smartholdem.io/
+How to get snapshot from https://snapshots.smartholdem.io/
 
 ```shell
 mkdir -p /home/sth/.local/share/sth-core/mainnet/snapshots
