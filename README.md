@@ -18,6 +18,8 @@ sudo su - sth
 ```
 ```shell
 sudo apt-get update --fix-missing
+sudo apt update
+sudo apt upgrade -y
 sudo apt-get install -y git curl apt-transport-https update-notifier
 sudo apt-get install build-essential libcairo2-dev pkg-config libtool autoconf automake libpq-dev jq -y
 sudo apt-get -y install libjemalloc-dev
