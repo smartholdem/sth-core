@@ -78,7 +78,7 @@ pm2 log
 ### Delegate Forging Node
 ```shell
 cd sth-core/packages/core
-nano bin/config/mainnet/delegates.json and insert "passphrase 12 worlds"
+nano bin/config/mainnet/delegates.json #and insert "passphrase 12 worlds"
 yarn sth config:publish --network=mainnet --reset
 yarn sth core:start --network=mainnet
 pm2 save
