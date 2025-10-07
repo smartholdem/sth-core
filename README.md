@@ -5,8 +5,8 @@
 
 ## Requirements
 
-- OS Ubuntu v20 - v24
-- nodejs v16 - v18
+- OS Ubuntu v20+
+- nodejs v18
 
 
 ## Installation
@@ -26,7 +26,7 @@ sudo apt-get -y install libjemalloc-dev
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.40.3/install.sh 2>/dev/null | bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-nvm install 18.20.8
+nvm install 18
 npm install -g yarn pm2 forever grunt-cli
 
 sudo apt install python-is-python3
